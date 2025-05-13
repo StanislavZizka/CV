@@ -5,11 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio Website</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/4ff7346514.js" crossorigin="anonymous"></script> <!--icons_for_my_personal_portfolio-->
+    <script src="../js/script.js" defer></script>
+     <!--<script src="https://kit.fontawesome.com/4ff7346514.js" crossorigin="anonymous"></script>-->
+     <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-86cd56275caec687041f80b17dc62e32.css?vsn=d">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
 </head>
 <body>
       <nav class="sidebar">
-            <img src="../images/me.jpg" alt="Stanislav Žižka" class="profile-pic">
+        <a href="https://www.linkedin.com/in/stanislav-%C5%BEi%C5%BEka-0aa056233/" target="_blank">
+            <img src="../images/me.jpg" alt="Stanislav Žižka" class="profile-pic"></a>
             <h2>Stanislav Žižka</h2>
             <ul>
                 <li><a href="#about">O mně</a></li>
@@ -18,9 +72,6 @@
                 <li><a href="#projects">Projekty</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
-            <a href="https://www.linkedin.com/in/stanislav-%C5%BEi%C5%BEka-0aa056233/" target="_blank" class="linkedin">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
       </nav>
       <main>
         <!--This sections is about me-->
@@ -38,18 +89,42 @@
             <h2>Vzdělání</h2>
             <div class="timeline">
               <div class="node">
-                <div class="content">Jihočeská Univerzita<br><strong>Softwarové inženýrství (Ing.)</strong><br><em>Září 2023 - dosud</em></div>
+                <div class="content">Jihočeská Univerzita<br><strong>Softwarové inženýrství (Ing.)</strong><span class="info-icon" onclick="openPopup('popup1')"><i class="fa-regular fa-circle-info"></i></span><br><em>Září 2023 - dosud</em></div>
               </div>
               <div class="line"></div>
               <div class="node">
-                <div class="content">Jihočeská Univerzita<br><strong>Systémové inženýrství (Bc.)</strong><br><em>Září 2020 - květen 2023</em></div>
+                <div class="content">Jihočeská Univerzita<br><strong>Systémové inženýrství (Bc.)</strong><span class="info-icon" onclick="openPopup('popup2')"><i class="fa-regular fa-circle-info"></i></span><br><em>Září 2020 - květen 2023</em></div>
               </div>
               <div class="line"></div>
               <div class="node">
-                <div class="content">SOŠ Blatná<br><strong>Softwarové inženýrství (SŠ)</strong><br><em>Září 2016 - květen 2020</em></div>
+                <div class="content">SOŠ Blatná<br><strong>Eleketrotechnik (SŠ)</strong><span class="info-icon" onclick="openPopup('popup3')"><i class="fa-regular fa-circle-info"></i></span><br><em>Září 2016 - květen 2020</em></div>
               </div>
             </div>
-          </section>
+          <div class="popup" id="popup1">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup1')">&times;</span>
+                <h3>Softwarové Inženýrství (Ing.)</h3>
+                <p>Studium softwarového inženýrství se zaměřením blabla</p>
+            </div>
+          </div>
+
+          <div class="popup" id="popup2">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup2')">&times;</span>  <!--&times; -> křížek -->
+                <h3>Systémové inženýrství (Bc.)</h3>
+                <p>Obor byl zaměřený na blablalbla.</p>
+            </div>
+          </div>
+
+          <div class="popup" id="popup3">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('popup3')">&times;</span>
+                <h3>Elektrotechnik (SŠ)</h3>
+                <p>Obor byl zaměřený na blablaclbla.</p>
+            </div>
+          </div>
+         <!--Descriptions what is in section education in popup-->
+        </section>
          <!--This sections is about my working experiences-->
          <section id="experience">
             <h2>Praxe</h2>
@@ -110,7 +185,14 @@
 
              <section id="contact">
                 <h2>Kontaktuj mě</h2>
-                <p>doplnit...</p>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Předmět" required>
+                    <textarea name="message" placeholder="Zpráva" required></textarea>
+                    <button type="submit">Odeslat</button>
+                </form>
+                <p id="form-status"></p>
              </section>
       </main>
 </body>
